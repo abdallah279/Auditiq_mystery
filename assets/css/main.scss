@@ -1,0 +1,322 @@
+@import "sass/variables", "sass/mixins", "sass/global", "sass/components",
+  "sass/navbar", "sass/sidebar";
+
+.main-padding-right {
+  @include dir-padding-left(280px);
+
+  @media screen and (max-width: $screen-lg) {
+    @include dir-padding-left(0px !important);
+  }
+}
+
+/**************** Start visits-cards *************/
+
+.visits-card {
+  background-color: $white;
+  box-shadow: $main-shadow;
+  padding: 22px 20px;
+  display: flex;
+  align-items: start;
+  gap: 15px;
+  border-radius: 8px;
+  transition: $main-transition;
+
+  .icon {
+    max-height: 50px;
+  }
+
+  .num {
+    font-size: 20px;
+    color: $sec;
+    margin-bottom: 10px;
+    font-family: fontMed;
+  }
+
+  .name {
+    color: $dark;
+    font-size: 16px;
+  }
+
+  &:hover {
+    box-shadow: $sec-shadow;
+  }
+}
+
+/**************** End visits-cards *************/
+
+/**************** Start Table *************/
+
+.invoices {
+  overflow-x: auto;
+  box-shadow: $main-shadow;
+  border-radius: 15px;
+
+  &::-webkit-scrollbar {
+    height: 4px;
+  }
+}
+
+.invoices-table {
+  width: 100%;
+  white-space: nowrap;
+
+  thead {
+    border-bottom: 1px solid $dark2;
+
+    th {
+      padding: 20px 10px 15px;
+      text-align: center;
+      font-size: 15px;
+      color: $dark;
+      font-weight: 500;
+
+      @media screen and (max-width: $screen-xs) {
+        padding: 15px 12px;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      border-bottom: 1px solid $dark2;
+
+      &:last-child {
+        border: none;
+      }
+
+      td {
+        font-size: 15px;
+        color: $dark;
+        padding: 25px 10px;
+        text-align: center;
+        vertical-align: middle;
+
+        @media screen and (max-width: $screen-xs) {
+          font-size: 14px;
+          padding: 15px 12px;
+        }
+
+        .info {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          font-family: fontMed;
+
+          .left {
+            text-align: start;
+
+            .name {
+              font-size: 16px;
+              color: $black;
+              margin-bottom: 7px;
+            }
+
+            .text {
+              font-size: 15px;
+              color: $light;
+            }
+          }
+        }
+
+        .table-img {
+          width: 60px;
+          height: 60px;
+          object-fit: cover;
+
+          &.bg {
+            width: 180px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 8px;
+          }
+        }
+
+        &.table-text {
+          max-width: 250px;
+          min-width: 250px;
+          white-space: normal;
+          line-height: 1.6;
+        }
+
+        button {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}
+
+/**************** End Table *************/
+
+/**************** Start branches *************/
+.branche_img {
+  max-width: 300px;
+
+  @media screen and (max-width: $screen-sm) {
+    max-width: 250px;
+  }
+}
+
+.map {
+  width: 100%;
+  height: 300px;
+  border-radius: 8px;
+
+  @media screen and (max-width: $screen-sm) {
+    height: 300px;
+  }
+}
+/**************** End branches *************/
+
+/**************** Start packages Section *************/
+.package-sec {
+  box-shadow: $main-shadow;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  @media screen and (max-width: $screen-xl) {
+    gap: 15px;
+    padding: 20px 10px;
+  }
+
+  @media screen and (max-width: $screen-sm) {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .package_img {
+    width: 160px;
+    height: 160px;
+    flex-shrink: 0;
+    
+    @media screen and (max-width: $screen-xl) {
+      width: 135px;
+      height: 135px;
+    }
+  }
+
+  .left {
+    width: 100%;
+    .top {
+      @include between;
+      gap: 15px;
+      flex-wrap: wrap;
+
+      @media screen and (max-width: $screen-sm) {
+        justify-content: center;
+      }
+      
+      .form-title {
+        margin-bottom: 12px;
+      }
+    }
+    
+    .bottom {
+      border-top: 1px solid $dark2;
+      padding-top: 15px;
+      margin-top: 15px;
+      .package-item {
+        font-size: 15px;
+        color: $black;
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+  &.visit{
+    .left {
+      width: 100%;
+      .top {
+        justify-content: start;
+        gap: 25px;
+
+        .package_img{
+          @include circle(60px);
+          object-fit: cover;
+        }
+      }
+      
+      .bottom {
+        border-top: 1px solid $dark2;
+        padding-top: 15px;
+        margin-top: 15px;
+        .package-item {
+          font-size: 15px;
+          color: $black;
+          margin-bottom: 12px;
+        }
+      }
+    }
+
+    .main-btn{
+      margin-inline-start: auto;
+    }
+  }
+}
+/**************** End packages Section *************/
+
+
+
+/***************** Start contact Page ***************/
+
+.contact-img {
+  display: block;
+  max-width: 370px;
+  max-height: 360px;
+
+  @media screen and (max-width: $screen-md) {
+    max-width: 360px;
+  }
+
+  @media screen and (max-width: $screen-xs) {
+    max-width: calc(100% - 60px);
+  }
+}
+
+.contact-items {
+  @include between;
+  gap: 25px;
+  flex-wrap: wrap;
+
+  .contact-item {
+    .head {
+      font-size: 16px;
+      color: $main;
+      margin-bottom: 18px;
+
+      @media screen and (max-width: $screen-xs) {
+        font-size: 15px;
+      }
+    }
+
+    .text {
+      color: $dark;
+      font-size: 15px;
+      font-family: fontLight;
+      @media screen and (max-width: $screen-xs) {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.contact {
+  .contact-img {
+    margin-inline-start: auto;
+  }
+  .contact-items {
+    .contact-item {
+      .head,
+      .text {
+        color: $white;
+      }
+    }
+  }
+}
+
+/***************** End contact Page ***************/

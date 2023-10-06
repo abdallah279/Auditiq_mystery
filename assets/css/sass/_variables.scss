@@ -1,0 +1,86 @@
+$ltr: 'html[lang="en"]';
+$rtl: 'html[lang="ar"]';
+/*********************************************************
+  // global color variables
+**********************************************************/
+
+// colors
+
+$main: #3098de;
+$sec: #0c69ad;
+$dark: #505050;
+$dark2: #E0E0E0;
+$white: #fff;
+$white2: #e6e6e6;
+$white3: #F0F0F0;
+$black: #202020;
+$black2: #000;
+$light: #f6f6f8;
+$red: #d00000;
+$orange: #46ab4d;
+// $dark2: #302F2F;
+// $blue: #2D2E83;
+// $blue2: #1D71B8;
+$green: #A26F2D;
+$yellow: #f4cd1e;
+// $yellow2: #DDAD16;
+// $black2: #161616;
+// $black3: #7b7b7b;
+// $light2: #EEECE6;
+// $light3: #89877e;
+// $light4: #F5F5F5;
+// $light5: #6c757d;
+$border-color: #dedede;
+$placholder-color: #adabab;
+$icon-color: #b1b0b0;
+$side-color: #939393;
+$text-color: #9ea0a4;
+$gold: #F6AB27;
+// $gold2: #FFC107;
+// $gold3: #FECC2F;
+$main-shadow: 0 0 15px 0
+  rgba(
+    $color: $black,
+    $alpha: 10%,
+  );
+$sec-shadow: 0 1px 7px rgb(0 0 0 / 6%);
+$side-shadow: 0 2px 5px rgb(0 0 0 / 5%);
+$nav-shadow: 0 3px 16px rgb(133 133 133 / 5%);
+$text-shadow: 0 2px 2px
+  rgba(
+    $color: $dark,
+    $alpha: 0.1,
+  );
+$img-shadow: 0 4px 4px 0
+  rgba(
+    $color: #000000,
+    $alpha: 25%,
+  );
+$main-transition: all 0.3s ease;
+
+/*********************************************************
+  // Font variables
+**********************************************************/
+
+$font-normal: "HSDream-Light", sans-serif, "Font Awesome 5 Free";
+
+/*********************************************************
+  // spacing variables
+**********************************************************/
+// these variable/s is still not applied on all elements
+
+$space-between: 20px;
+$spacer: 10px;
+
+/*********************************************************
+  // screens
+**********************************************************/
+$screen-xxl: 1720px;
+$screen-xx: 1600px;
+$screen-xl: 1280px;
+$screen-lg2: 1200px;
+$screen-lg: 992px;
+$screen-md: 768px;
+$screen-sm: 576px;
+$screen-xs: 425px;
+$screen-xxs: 375px;

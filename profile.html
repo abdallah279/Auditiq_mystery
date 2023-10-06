@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auditiq</title>
+    <link rel="shortcut icon" href="./assets/imgs/logo.png" type="image/x-icon">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- Bootstrap 5 -->
+    <link rel="stylesheet" href="./assets/plugins/bootstrap/bootstrap.rtl.min.css">
+    <!-- <link rel="stylesheet" href="./assets/plugins/bootstrap/bootstrap.min.css"> -->
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="./assets/plugins/OwlCarousel2-2.3.4/dist_2/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/plugins/OwlCarousel2-2.3.4/dist_2/assets/owl.theme.default.min.css">
+    <!-- Select 2 -->
+    <link rel="stylesheet" href="./assets/plugins/select2/select2.min.css">
+    <!-- fancybox -->
+    <link rel="stylesheet" href="./assets/plugins/FancyBox/jquery.fancybox.min.css">
+    <!-- FlatPicker -->
+    <link rel="stylesheet" href="./assets/plugins/FlatPicker/flatpickr.css">
+    <!-- intlTelInput -->
+    <link rel="stylesheet" href="./assets/plugins/flag/css/intlTelInput.css">
+    <!-- Style Css -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+
+    <!-- start to loader -->
+    <div class="loader-container">
+        <span class="loader"></span>
+    </div>
+
+
+    <!-- Start Navbar -->
+    <nav class="navbar-m main-padding-right">
+        <div class="container ">
+            <div class="navbar-content">
+
+                <div class="d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-bars-staggered side-open sm-btn sm"></i>
+                    <h1 class="page-title">تقييمات العملاء</h1>
+                </div>
+
+                <div class="left-sec">
+                    <div class="dropdown">
+                        <button type="button" class="profile-drop dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="./assets/imgs/profile.png" class="profile-img" alt="">
+                            <div class="ls">
+                                <span class="profile-name">عبدالله محمد</span>
+                                <div class="star_text mt-1">
+                                    <i class="fa-solid fa-star star"></i>
+                                    <span class="ff-l">4.5</span>
+                                </div>
+                            </div>
+                        </button>
+
+                        <ul class="dropdown-menu drop-lang left ">
+                            <a href="profile.html" class="lang-item">
+                                <img src="./assets/imgs/icons/profile_ic.png" alt="" class="ic">
+                                <div class="text">الملف الشخصي</div>
+                            </a>
+                            <a href="contact-us.html" class="lang-item">
+                                <img src="./assets/imgs/icons/profile_ic4.png" alt="" class="ic">
+                                <div class="text">تواصل معنا</div>
+                            </a>
+                            <a href="terms.html" class="lang-item">
+                                <img src="./assets/imgs/icons/profile_ic5.png" alt="" class="ic">
+                                <div class="text">الشروط والأحكام</div>
+                            </a>
+                            <a href="#" class="lang-item red">
+                                <img src="./assets/imgs/icons/profile_ic3.png" alt="" class="ic">
+                                <div class="text">تسجيل خروج</div>
+                            </a>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+
+
+    <!-- Start Sidebar -->
+    <div class="sidebar-m">
+
+        <a href="index.html" class="logo">
+            <img src="assets/imgs/logo.png" alt="store img" class="store-img">
+        </a>
+
+        <ul class="links">
+
+            <li class="nav-collapse">
+                <a href="#" class="coll-open link">
+                    <img class="side-icon" src="assets/imgs/icons/sidebar_1.png" alt="">
+                    <span class="text">الزيارات</span>
+                </a>
+                <ul class="collapse-content">
+                    <a href="index.html" class="coll link">
+                        زيارات لم تتم
+                    </a>
+
+                    <a href="scheduled-visits.html" class="coll link">
+                        زيارات مجدولة
+                    </a>
+
+                    <a href="visits-in-progress.html" class="coll link">
+                        زيارات قيد التنفيذ
+                    </a>
+
+                    <a href="visits-completed.html" class="coll link">
+                        زيارات اكتملت
+                    </a>
+                </ul>
+            </li>
+
+            <a href="wallet.html" class="link">
+                <img class="side-icon" src="assets/imgs/icons/sidebar_5.png" alt="">
+                <span class="text">المحفظة</span>
+            </a>
+
+            <a href="customer-reviews.html" class="link">
+                <img class="side-icon" src="assets/imgs/icons/sidebar_6.png" alt="">
+                <span class="text">تقييمات العملاء</span>
+            </a>
+
+        </ul>
+
+    </div>
+    <!-- End Sidebar -->
+
+
+
+    <!-- Start main Section -->
+    <div class="main-sec sec-padding main-padding-right">
+        <div class="container">
+
+            <form action="" class="row">
+                <div class="col-xl-6 col-lg-8">
+
+                    <!-- Photo -->
+                    <div class="input-g">
+
+                        <div class="profile-img-con">
+
+                            <a href="./assets/imgs/profile.png" class="fancybox-img" data-fancybox="gallery">
+                                <img src="./assets/imgs/profile.png" class="profile-img" alt="">
+                            </a>
+
+                            <div class="profile-input">
+                                <input type="file" id="profileImg" accept="image/*"
+                                    class="hidden-input img-upload-input profile">
+                                <label for="profileImg" class="profile-label">
+                                    <img src="assets/imgs/icons/upload.png" alt="" class="ic">
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="input-g">
+                        <label for="" class="main-label">
+                            الاسم
+                            <span class="label-hint">*</span>
+                        </label>
+                        <div class="main-input">
+                            <input type="text" placeholder="أدخل الاسم" class="input-me">
+                        </div>
+                    </div>
+
+                    <div class="input-g">
+                        <label for="" class="main-label">
+                            رقم الجوال
+                            <span class="label-hint">*</span>
+                        </label>
+                        <div class="main-input">
+                            <input type="number" id="telephone" placeholder="أدخل رقم الجوال"
+                                class="input-me phone-inp">
+                        </div>
+                    </div>
+
+                    <div class="input-g">
+                        <label for="" class="main-label">
+                            البريد الالكترونى
+                            <span class="label-hint">*</span>
+                        </label>
+                        <div class="main-input">
+                            <input type="email" placeholder="أدخل البريد الالكترونى" class="input-me">
+                        </div>
+                    </div>
+
+                    <div class="input-g">
+                        <label for="" class="main-label">
+                            النوع
+                            <span class="label-hint">*</span>
+                        </label>
+                        <div class="main-input">
+                            <select name="" id="" class="select">
+                                <option value="" selected disabled>اختر النوع</option>
+                                <option value="">ذكر</option>
+                                <option value="">أنثى</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="input-g">
+                        <label for="" class="main-label">
+                            اللغة
+                            <span class="label-hint">*</span>
+                        </label>
+                        <div class="main-input">
+                            <select name="" id="" class="select">
+                                <option value="" selected disabled>اختر اللغة</option>
+                                <option value="">العربية</option>
+                                <option value="">الانجليزية</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="input-g">
+                        <label for="" class="main-label">
+                            رقم الهوية
+                            <span class="label-hint">*</span>
+                        </label>
+                        <div class="main-input">
+                            <input type="number" placeholder="أدخل رقم الهوية" class="input-me">
+                        </div>
+                    </div>
+
+                    <div class="input-g">
+                        <label for="" class="main-label">
+                            تاريخ الميلاد
+                            <span class="label-hint">*</span>
+                        </label>
+                        <div class="main-input">
+                            <input type="date" placeholder="أدخل تاريخ الميلاد" class="input-me date">
+                            <i class="fa-regular fa-calendar main-icon"></i>
+                        </div>
+                    </div>
+
+                    <div class="input-g">
+                        <label for="" class="main-label">
+                            المدينة
+                            <span class="label-hint">*</span>
+                        </label>
+                        <div class="main-input">
+                            <select name="" id="" class="select">
+                                <option value="" selected disabled>اختر المدينة</option>
+                                <option value="">ذكر</option>
+                                <option value="">أنثى</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="input-g">
+                        <label for="" class="main-label">
+                            النشاط
+                            <span class="label-hint">*</span>
+                        </label>
+                        <div class="main-input">
+                            <select name="" id="" class="select">
+                                <option value="" selected disabled>اختر النشاط</option>
+                                <option value="">العربية</option>
+                                <option value="">الانجليزية</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="buttons mt-4">
+                        <button type="submit" class="main-btn sec up">حفظ</button>
+                        <a href="change-password.html" class="main-btn transparent">تغيير كلمة المرور</a>
+                    </div>
+
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <!-- End main Section -->
+
+
+    <div class="overlay-m"></div>
+
+
+    <!-- Bootstrap 5 -->
+    <script src="./assets/plugins/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- Jquery -->
+    <script src="./assets/plugins/jquery/jquery-3.5.1.min.js"></script>
+    <!-- Owl Carousel -->
+    <script src="./assets/plugins/OwlCarousel2-2.3.4/dist_2/owl.carousel.min.js"></script>
+    <!-- Select 2 -->
+    <script src="./assets/plugins/select2/select2.js"></script>
+    <!-- fancybox -->
+    <script src="./assets/plugins/FancyBox/jquery.fancybox.min.js"></script>
+    <!-- FlatPicker -->
+    <script src="./assets/plugins/FlatPicker/flatpickr.js"></script>
+    <!-- Counter -->
+    <script src="./assets/plugins/countUp/waypoints.js"></script>
+    <script src="./assets/plugins/countUp/jquery.countup.min.js"></script>
+    <!-- intlTelInput -->
+    <script src="./assets/plugins/flag/js/intlTelInput.min.js"></script>
+    <!-- intlTelInput -->
+    <script>
+        var input = document.querySelector("#telephone");
+        window.intlTelInput(input, ({
+            autoPlaceholder: "ادخل",
+            customPlaceholder: "kggg",
+            initialCountry: 'sa',
+            // nationalMode:false,
+            separateDialCode: true,
+        }));
+    </script>
+
+    <!-- Flat Picker -->
+    <script>
+        flatpickr(".date", {
+            disableMobile: "true",
+            // mode: "multiple",
+            dateFormat: "Y-m-d"
+        });
+    </script>
+
+
+    <!-- Upload Img -->
+    <script>
+        let loginInputs = document.querySelectorAll('.img-upload-input');
+
+        loginInputs.forEach((input) => {
+            let profileImg = input.closest('.profile-img-con').querySelector('.profile-img');
+            let fancyImg = input.closest('.profile-img-con').querySelector('.fancybox-img');
+            let imageSrc = profileImg.getAttribute('src');
+            input.onchange = function () {
+
+                let reader = new FileReader();
+                if (input.files[0]) {
+                    reader.readAsDataURL(input.files[0]);
+                } else {
+                    profileImg.setAttribute('src', imageSrc);
+                    fancyImg.setAttribute('href', imageSrc);
+                }
+
+                reader.onload = () => {
+                    profileImg.setAttribute('src', reader.result);
+                    fancyImg.setAttribute('href', reader.result);
+                }
+            }
+        });
+    </script>
+
+    <!-- Main Js -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

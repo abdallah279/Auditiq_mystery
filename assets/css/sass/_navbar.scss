@@ -1,0 +1,100 @@
+.navbar-m {
+  padding: 15px 0;
+  box-shadow: $main-shadow;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $sec;
+  z-index: 10;
+  transition: $main-transition;
+
+  @media screen and (max-width: $screen-md) {
+    padding: 15px 0;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    @include dir-right(0);
+    width: calc(100% - 280px);
+    background-color: $white;
+    height: 100%;
+    z-index: -1;
+    border-start-start-radius: 45px;
+
+    @media screen and (max-width: $screen-lg) {
+      width: 100%;
+      border-radius: 0;
+    }
+  }
+
+  .navbar-content {
+    @include between;
+    width: 100%;
+
+    .side-open {
+      cursor: pointer;
+      display: none;
+
+      @media screen and (max-width: $screen-lg) {
+        display: flex;
+      }
+    }
+
+    .logo {
+      width: 200px;
+      height: 26px;
+      margin: auto;
+
+      @media screen and (max-width: $screen-lg) {
+        width: 140px;
+      }
+
+      @media screen and (max-width: $screen-sm) {
+        order: 1;
+      }
+    }
+
+    .left-sec {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      @media screen and (max-width: $screen-sm) {
+        order: 3;
+      }
+
+      @media screen and (max-width: $screen-md) {
+        gap: 7px;
+      }
+    }
+
+    .not-link {
+      max-width: 20px;
+      max-height: 20px;
+    }
+
+    .head-lang {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      color: $white;
+      cursor: pointer;
+      transition: $main-transition;
+
+      .lang {
+        font-size: 14px;
+      }
+
+      i {
+        font-size: 11px;
+      }
+
+      &:hover {
+        color: $yellow;
+      }
+    }
+  }
+}

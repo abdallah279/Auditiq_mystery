@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auditiq</title>
+    <link rel="shortcut icon" href="./assets/imgs/logo.png" type="image/x-icon">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- Bootstrap 5 -->
+    <link rel="stylesheet" href="./assets/plugins/bootstrap/bootstrap.rtl.min.css">
+    <!-- <link rel="stylesheet" href="./assets/plugins/bootstrap/bootstrap.min.css"> -->
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="./assets/plugins/OwlCarousel2-2.3.4/dist_2/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/plugins/OwlCarousel2-2.3.4/dist_2/assets/owl.theme.default.min.css">
+    <!-- Select 2 -->
+    <link rel="stylesheet" href="./assets/plugins/select2/select2.min.css">
+    <!-- fancybox -->
+    <link rel="stylesheet" href="./assets/plugins/FancyBox/jquery.fancybox.min.css">
+    <!-- FlatPicker -->
+    <link rel="stylesheet" href="./assets/plugins/FlatPicker/flatpickr.css">
+    <!-- intlTelInput -->
+    <link rel="stylesheet" href="./assets/plugins/flag/css/intlTelInput.css">
+    <!-- Rating -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
+    <!-- Style Css -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+
+    <!-- start to loader -->
+    <div class="loader-container">
+        <span class="loader"></span>
+    </div>
+
+
+    <!-- Start Navbar -->
+    <nav class="navbar-m main-padding-right">
+        <div class="container ">
+            <div class="navbar-content">
+
+                <div class="d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-bars-staggered side-open sm-btn sm"></i>
+                    <h1 class="page-title">الزيارات ,زيارات مجدولة ,تفاصيل الزيارة</h1>
+                </div>
+
+                <div class="left-sec">
+                    <div class="dropdown">
+                        <button type="button" class="profile-drop dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="./assets/imgs/profile.png" class="profile-img" alt="">
+                            <div class="ls">
+                                <span class="profile-name">عبدالله محمد</span>
+                                <div class="star_text mt-1">
+                                    <i class="fa-solid fa-star star"></i>
+                                    <span class="ff-l">4.5</span>
+                                </div>
+                            </div>
+                        </button>
+
+                        <ul class="dropdown-menu drop-lang left ">
+                            <a href="profile.html" class="lang-item">
+                                <img src="./assets/imgs/icons/profile_ic.png" alt="" class="ic">
+                                <div class="text">الملف الشخصي</div>
+                            </a>
+                            <a href="contact-us.html" class="lang-item">
+                                <img src="./assets/imgs/icons/profile_ic4.png" alt="" class="ic">
+                                <div class="text">تواصل معنا</div>
+                            </a>
+                            <a href="terms.html" class="lang-item">
+                                <img src="./assets/imgs/icons/profile_ic5.png" alt="" class="ic">
+                                <div class="text">الشروط والأحكام</div>
+                            </a>
+                            <a href="#" class="lang-item red">
+                                <img src="./assets/imgs/icons/profile_ic3.png" alt="" class="ic">
+                                <div class="text">تسجيل خروج</div>
+                            </a>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+
+
+    <!-- Start Sidebar -->
+    <div class="sidebar-m">
+
+        <a href="index.html" class="logo">
+            <img src="assets/imgs/logo.png" alt="store img" class="store-img">
+        </a>
+
+        <ul class="links">
+
+            <li class="nav-collapse">
+                <a href="#" class="coll-open link">
+                    <img class="side-icon" src="assets/imgs/icons/sidebar_1.png" alt="">
+                    <span class="text">الزيارات</span>
+                </a>
+                <ul class="collapse-content">
+                    <a href="index.html" class="coll link">
+                        زيارات لم تتم
+                    </a>
+
+                    <a href="scheduled-visits.html" class="coll link">
+                        زيارات مجدولة
+                    </a>
+
+                    <a href="visits-in-progress.html" class="coll link">
+                        زيارات قيد التنفيذ
+                    </a>
+
+                    <a href="visits-completed.html" class="coll link">
+                        زيارات اكتملت
+                    </a>
+                </ul>
+            </li>
+
+            <a href="wallet.html" class="link">
+                <img class="side-icon" src="assets/imgs/icons/sidebar_5.png" alt="">
+                <span class="text">المحفظة</span>
+            </a>
+
+            <a href="customer-reviews.html" class="link">
+                <img class="side-icon" src="assets/imgs/icons/sidebar_6.png" alt="">
+                <span class="text">تقييمات العملاء</span>
+            </a>
+
+        </ul>
+
+    </div>
+    <!-- End Sidebar -->
+
+
+
+    <!-- Start main Section -->
+    <div class="main-sec sec-padding main-padding-right">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-6">
+
+                    <div class="package-sec visit">
+                        <div class="left">
+                            <div class="top">
+                                <img src="./assets/imgs/store.png" alt="" class="package_img sm">
+                                <div class="info">
+                                    <div class="form-title ff-m">اسم المتجر: <span>هايبر ماركت</span></div>
+                                    <p class="main-text">
+                                        موعد الزيارة: <span class="ff-m">25/9/2023</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <p class="fs-15 mb-3">
+                                    اسم المشتري: <span>عاصم عبدالله</span>
+                                </p>
+                                <p class="fs-15">
+                                    رقم جوال المشتري: <span class="ff-m" dir="ltr"> +966 122333444</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="package-sec d-block">
+                        <h6 class="section-title">موقع الفرع</h6>
+                        <div id="map" class="main-border map"></div>
+                        <p class="fs-16 mt-4">الرياض ,حي الياسمين ,شارع الملك عبدالعزيز</p>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6">
+
+                    <div class="package-sec visit d-block">
+                        <h6 class="section-title">الاستبيان</h6>
+                        <div class="left">
+                            <div class="top">
+                                <img src="./assets/imgs/file.png" alt="" class="package_img sm">
+                                <div class="info">
+                                    <div class="form-title ff-m">اسم الاستبيان: <span>استطلاع رأي</span></div>
+                                    <p class="main-text">
+                                        القسم: <span>منتجات</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <a href="#" class="main-btn sec up mt-3" download="Invoice File">
+                                <i class="fa-solid fa-download"></i>
+                                تحميل
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="package-sec d-block">
+                        <h6 class="section-title">ملخص الطلب</h6>
+                        <p class="d-flex-between fs-15 mb-3">
+                            <span>قيمة الطلب</span>
+                            <span class="ff-m"> 150.00 ر.س</span>
+                        </p>
+                        <p class="d-flex-between fs-15 mb-3">
+                            <span>عمولة المتجر</span>
+                            <span class="ff-m"> 15.00 ر.س</span>
+                        </p>
+                        <p class="d-flex-between fs-15 mb-3">
+                            <span>القيمة المضافة</span>
+                            <span class="ff-m"> 15.00 ر.س</span>
+                        </p>
+                        <p class="d-flex-between fs-16 c-black">
+                            <span>إجمالي قيمة الطلب</span>
+                            <span class="ff-m"> 150.00 ر.س</span>
+                        </p>
+                    </div>
+
+                    <div class="package-sec d-block">
+                        <h6 class="section-title">تقييمي</h6>
+                        <div class="rate-icons">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="main-text mt-3">
+                            هذا النص هو مثال لنص آخر يمكن ان يستبدل في نفس المساحة الخاصة بهذا النص من خلال مولد النص
+                            العربي هذا النص هو مثال لنص آخر
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="buttons">
+                <a href="#" class="main-btn up yellow"><i class="fa-solid fa-check"></i> قبول</a>
+                <a href="#" class="main-btn up red"><i class="fa-solid fa-xmark"></i> رفض</a>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#endVisit" class="main-btn up red">انهاء الزيارة</a>
+            </div>
+
+        </div>
+    </div>
+    <!-- End main Section -->
+
+
+    <div class="overlay-m"></div>
+
+    <!-- Start End Visit Modal -->
+    <div class="modal fade" id="endVisit" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <form action="" class="modal-content">
+
+                <div class="modal-body center">
+                    <h5 class="form-title mb-0">أضف تقييمك</h5>
+
+                    <div class="w-100 mt-4">
+                        <div class="rating-star align-items-start mx-auto"></div>
+                        <input type="hidden" class="rate-value">
+                        <div class="main-input">
+                            <textarea class="input-me text-area md" placeholder="أضف رأيك"></textarea>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="submit" data-bs-dismiss="modal" class="main-btn sec up">تأكيد</button>
+                    <button type="button" class="main-btn light" data-bs-dismiss="modal">رجوع</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap 5 -->
+    <script src="./assets/plugins/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- Jquery -->
+    <script src="./assets/plugins/jquery/jquery-3.5.1.min.js"></script>
+    <!-- Owl Carousel -->
+    <script src="./assets/plugins/OwlCarousel2-2.3.4/dist_2/owl.carousel.min.js"></script>
+    <!-- Select 2 -->
+    <script src="./assets/plugins/select2/select2.js"></script>
+    <!-- fancybox -->
+    <script src="./assets/plugins/FancyBox/jquery.fancybox.min.js"></script>
+    <!-- FlatPicker -->
+    <script src="./assets/plugins/FlatPicker/flatpickr.js"></script>
+    <!-- Counter -->
+    <script src="./assets/plugins/countUp/waypoints.js"></script>
+    <script src="./assets/plugins/countUp/jquery.countup.min.js"></script>
+    <!-- intlTelInput -->
+    <script src="./assets/plugins/flag/js/intlTelInput.min.js"></script>
+    <!-- Map -->
+    <script type="text/javascript"
+        src="https://maps.google.com/maps/api/js?&libraries=places&key=AIzaSyBNLoYGrbnQI_GMqHt6m0PSN9yA7Zvq7gA"></script>
+    <!-- Rating -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+
+
+    <!-- Rating -->
+    <script>
+        $(function () {
+            let isRtlRate = $('html[lang="ar"]').length > 0;
+        
+            $(".rating-star").rateYo({
+                halfStar: true,
+                spacing   : "4px",
+                starWidth: "30px",
+                normalFill: "#E3E3E3",
+                ratedFill: "#FFC107",
+                rtl: isRtlRate ? true : false,
+                onSet: function (rating, rateYoInstance) {
+                    console.log(rating)
+                    let rateInput = $(this).next('.rate-value');
+                    rateInput.attr('value', rating);
+                }
+            });
+
+        });
+
+    </script>
+
+
+    <!-- Initialize And Add The Map -->
+    <script>
+        function initMap() {
+            var location = { lat: 24.746189966314272, lng: 46.87979429238138 };
+
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 8,
+                center: location,
+            });
+
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map,
+                draggable: false,
+            });
+
+        }
+
+        initMap();
+
+    </script>
+
+    <!-- Main Js -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
